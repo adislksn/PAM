@@ -17,9 +17,9 @@ function countingNum() {
     counter2(); // logs: 1
     counter2(); // logs: 2
     try {
-        console.log(i); // ReferenceError: i is not defined at IIFE.js:20:21
+        i; // ReferenceError: i is not defined at IIFE.js:20:21
     } catch (error) { // artinya i tidak dapat diakses secara langsung
-        console.log(error)
+        console.log(error);
     }
 
 // Contoh kedua dari mozilla.org
@@ -49,4 +49,5 @@ console.log(akunPertama.insertBalance); // undefined; karena berbentuk private d
 const akunKedua = penarikan(20); // "Money Inserted"
 console.log(akunKedua.buatPenarikan(30)); // "Insufficient money"
 console.log(akunKedua.buatPenarikan(20)); // 0
-console.log("%c source : https://web.archive.org/web/20171201033208/http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife & https://developer.mozilla.org/en-US/docs/Glossary/IIFE", "background: linear-gradient(89deg, #0f0f0f 0%, #F6D302 100%);\n  color: white;\n  display: block;\n  line-height: 25px;\n  height: 25px;\n padding: 5px;");
+// source : https://web.archive.org/web/20171201033208/http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife 
+//          https://developer.mozilla.org/en-US/docs/Glossary/IIFE
