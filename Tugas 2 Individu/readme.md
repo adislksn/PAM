@@ -4,8 +4,8 @@
 * [Immediately Invoked Function Expression](#iife)
 * [First-class function](#first-class-function)
 * [Higher-order function](#higher-order-function)
-* [Execution Context](#ec)
-* [Execution Context Stack](#ecs)
+* [Execution Context](#execution-context)
+* [Execution Context Stack](#execution-context-stack)
 * [Event Loop](#event-loop)
 * [Callbacks](#callbacks)
 * [Promises dan Async/Await](#promises-and-async-or-await)
@@ -86,7 +86,7 @@ const hiFunction = () => {
 hiFunction();
 ```
 
-## Execution Context
+## Execution-Context
 Execution Context (EC) adalah bentuk pendefinisian dalam javascript terkait pada environment mana sebuah code akan dieksekusi atau dapat diakses pada waktu tertentu
 Dalam EC dikenal dua tipe, pertama Global Execution Context atau (GEC) dan kedua adalah Functional Execution COntext (FEC). 
 * [go to file EC.js]()
@@ -103,7 +103,7 @@ const firstFunction = () =>{
 firstFunction(); //firstFunction(); juga merupakan contoh FEC
 ```
 
-## Execution Context Stack
+## Execution-Context-Stack
 Execution Context Stack (ECS) merupakan sebuah stack data dalam js dengan konsep LIFO untuk menyimpan semua stack proses eksekusi.
 * [go to file ECS.js]()
 <p align="center">
@@ -125,12 +125,12 @@ firstFunction(); // firstFunction(); berada pada stack proses setelah Global Exe
 
 ## Event-Loop
 Event Loop adalah bentuk cara kerja js terutama dalam hal asynchronus nya dengan menjalankan eksekusi dalam single thread, namun menggunakan beberapa struktur data yang membuatnya seakan seperti multi-threading
-* [go to file Event-Loop.js]()
+* [go to file Event-Loop.js](Event-Loop.js)
 
 <p align="center" style="display:flex; align-items:center;">
     Stack berperan untuk menjaga track dari semua operation yang akan dieksekusi, jika sebuah function selesai maka akan di pop() dari stack.
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img height="300px" src="./assets/stack.svg">
+    <img width="400px" src="./assets/stack.svg">
 </p>
 <br/>
 <p align="center" style="display:flex; align-items:center;">
@@ -140,6 +140,7 @@ Event Loop adalah bentuk cara kerja js terutama dalam hal asynchronus nya dengan
 <br/>
 <p align="center" style="display:flex; align-items:center;">
     Berikut contoh skema keseluruhannya, contoh tersebut merupakan penggunaan setTimeout()
+    &nbsp;
     <img width="400px" src="./assets/eventLoop.svg">
 </p>
 
